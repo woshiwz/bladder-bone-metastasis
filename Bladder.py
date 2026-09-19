@@ -10,8 +10,8 @@ st.title(
 
 st.sidebar.subheader('Variables')
 
-Age = st.sidebar.selectbox('Age', ['<50', '≥50'])
-Age_map = {'<50': 0, '≥50': 1}
+Age = st.sidebar.selectbox('Age', ['<60', '60-80',">80"])
+Age_map = {'<60': 0, '60-80': 1,">80":2}
 
 Radiation = st.sidebar.selectbox('Radiotherapy', ['No', 'Yes'])
 Radiation_map = {'No': 0, 'Yes': 1}
@@ -19,8 +19,8 @@ Radiation_map = {'No': 0, 'Yes': 1}
 Surgery = st.sidebar.selectbox('Surgery', ['No', 'Yes'])
 Surgery_map = {'No': 0, 'Yes': 1}
 
-Tumorsize = st.sidebar.selectbox('Tumor size', ['<5 cm', '≥5 cm'])
-Tumorsize_map = {'<5 cm': 0, '≥5 cm': 1}
+Tumorsize = st.sidebar.selectbox('Tumor size', ['<4 cm', '≥4 cm'])
+Tumorsize_map = {'<4 cm': 0, '≥4 cm': 1}
 
 T_stage = st.sidebar.selectbox(
     'T stage',
